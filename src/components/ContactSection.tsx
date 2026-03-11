@@ -36,7 +36,7 @@ const ContactSection = () => {
                 variant="outline"
                 className="w-full justify-start border-primary text-primary hover:bg-secondary"
               >
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/andre-e-3757a8223/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-3" />
                   Connect on LinkedIn
                 </a>
