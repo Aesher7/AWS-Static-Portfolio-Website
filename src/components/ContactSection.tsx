@@ -5,14 +5,28 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.");
-    setForm({ name: "", email: "", message: "" });
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("contact-form", {
+        body: form,
+      });
+      if (error) throw error;
+      toast.success("Message sent! I'll get back to you soon.");
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -85,9 +99,14 @@ const ContactSection = () => {
               rows={4}
               className="bg-card"
             />
-            <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-navy-light">
+            <Button
+              type="submit"
+              size="lg"
+              disabled={loading}
+              className="w-full bg-primary text-primary-foreground hover:bg-navy-light"
+            >
               <Send className="w-4 h-4 mr-2" />
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </motion.form>
         </div>
