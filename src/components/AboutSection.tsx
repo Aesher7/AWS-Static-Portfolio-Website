@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Cloud, Server, Code, Workflow } from "lucide-react";
 
 const focusAreas = [
-  { icon: Cloud, text: "AWS core services: EC2, S3, Lambda, RDS, VPC, IAM" },
-  { icon: Server, text: "Infrastructure as Code: Terraform, CloudFormation" },
-  { icon: Workflow, text: "Automation, DevOps practices, and CI/CD pipelines" },
-  { icon: Code, text: "Serverless and containerized applications" },
+  { icon: Cloud, text: "AWS core services: EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, CloudWatch" },
+  { icon: Server, text: "Infrastructure: CloudFront, Route 53, API Gateway, Load Balancing" },
+  { icon: Workflow, text: "DevOps practices, CI/CD pipelines, and root cause analysis" },
+  { icon: Code, text: "Programming: Python, JavaScript, SQL" },
 ];
 
 const AboutSection = () => {
@@ -22,10 +22,10 @@ const AboutSection = () => {
 
           <div className="space-y-4 text-foreground leading-relaxed text-base">
             <p>
-              Computer Science graduate and master's student concentrating in Artificial Intelligence and Machine Learning, now transitioning into cloud engineering. My background includes hands-on experience in software development, front-end frameworks, and backend integration with Python, React.js, and TensorFlow.
+              Computer Science student pursuing a B.S. and M.S. at Colorado State University – Global with concentrations in Artificial Intelligence and Machine Learning (GPA: 3.82). Currently transitioning into cloud engineering with hands-on experience in software development, front-end frameworks, and backend integration using Python, JavaScript, and TensorFlow.
             </p>
             <p>
-              I am actively pursuing the AWS Solutions Architect Professional Certificate to build expertise in designing secure, scalable, and cost-efficient cloud solutions. My focus areas include:
+              AWS Certified Cloud Practitioner with a focus on designing secure, scalable, and cost-efficient cloud solutions. My key areas include:
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const AboutSection = () => {
           </div>
 
           <p className="text-foreground leading-relaxed text-base">
-            I bring problem solving, collaboration, and data driven optimization from both my software and solar engineering experience. My goal involves applying these skills in cloud environments to modernize systems and deliver business value.
+            I bring problem solving, collaboration, and data driven optimization from both my software development and solar engineering experience. My goal is to apply these skills in cloud environments to modernize systems and deliver business value.
           </p>
         </motion.div>
       </div>

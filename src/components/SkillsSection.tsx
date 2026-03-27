@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { Cloud, Server, Code, Container } from "lucide-react";
+import { Code, Cloud, Wrench, Target } from "lucide-react";
 
 const skills = [
   {
-    icon: Cloud,
-    title: "Cloud Platforms",
-    items: ["AWS EC2", "S3", "Lambda", "RDS", "VPC", "IAM"],
-  },
-  {
-    icon: Server,
-    title: "Infrastructure as Code",
-    items: ["Terraform", "CloudFormation"],
-  },
-  {
     icon: Code,
     title: "Programming",
-    items: ["Python", "JavaScript", "React"],
+    items: ["Python", "JavaScript", "SQL"],
   },
   {
-    icon: Container,
-    title: "DevOps",
-    items: ["Docker", "Git", "CI/CD"],
+    icon: Cloud,
+    title: "Cloud (AWS)",
+    items: ["EC2", "Lambda", "S3", "RDS", "DynamoDB", "VPC", "Load Balancer", "API Gateway", "IAM", "CloudWatch"],
+  },
+  {
+    icon: Wrench,
+    title: "Tools",
+    items: ["Salesforce", "Tableau", "Git", "Jira", "VS Code"],
+  },
+  {
+    icon: Target,
+    title: "Technical Competencies",
+    items: ["Root Cause Analysis", "Incident Escalation Management", "Telemetry & Log Analysis"],
   },
 ];
 

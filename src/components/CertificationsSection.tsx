@@ -19,17 +19,19 @@ const CertificationsSection = () => {
             <Award className="w-12 h-12 text-primary-foreground" />
           </div>
 
-          <h3 className="text-xl font-bold text-primary mb-2">
-            AWS Certified Cloud Practitioner
+          <h3 className="text-xl font-bold text-primary mb-1">
+            AWS Certified Cloud Practitioner (CLF-C02)
           </h3>
-          <p className="text-muted-foreground mb-6">
-            Foundational certification validating cloud fluency and AWS knowledge
-          </p>
+          <p className="text-sm font-mono text-muted-foreground mb-4">March 2026</p>
+          <ul className="text-sm text-muted-foreground mb-6 space-y-1 text-left max-w-md mx-auto">
+            <li>• Covers S3, EC2, Lambda, RDS, VPC, IAM, and CloudFront</li>
+            <li>• Validates understanding of AWS core services, cloud architecture, pricing, and security</li>
+          </ul>
 
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-navy-light">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <ExternalLink className="w-4 h-4 mr-2" />
-              View AWS Cloud Practitioner Certification
+              View Certification
             </a>
           </Button>
         </motion.div>
