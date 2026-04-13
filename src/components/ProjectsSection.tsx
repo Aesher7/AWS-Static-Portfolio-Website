@@ -1,8 +1,24 @@
 import { motion } from "framer-motion";
-import { Globe, ExternalLink } from "lucide-react";
+import { Globe, ExternalLink, Server, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  {
+    title: "AWS Serverless Task Management API",
+    description:
+      "Built a full stack serverless task scheduler using React and TypeScript with an AWS backend powered by API Gateway, Lambda, and DynamoDB, implementing REST endpoints for full CRUD operations and scalable data storage. Diagnosed and resolved cross-service failures by fixing IAM permission issues, correcting a broken DynamoDB update pattern, and ensuring proper request payload handling.",
+    tech: ["API Gateway", "Lambda", "DynamoDB", "React", "TypeScript", "IAM", "CloudWatch"],
+    icon: Server,
+    link: "https://github.com/Aesher7/serverless-crud-api-aws",
+  },
+  {
+    title: "Gmail AI Assistant Agent",
+    description:
+      "Built an autonomous AI agent in Python that integrates with Gmail via Google's REST API and OAuth 2.0 authentication, using Claude AI (Anthropic) to automatically summarize, categorize, and score urgency of incoming emails. Architected across four decoupled modules using the Perceive, Decide, Act loop with automated Gmail API replies and real-time desktop notifications.",
+    tech: ["Python", "Gmail API", "OAuth 2.0", "Claude AI", "REST API"],
+    icon: Mail,
+    link: "https://github.com/Aesher7/Gmail-AI-Assistant-Agent",
+  },
   {
     title: "AWS Static Portfolio Website Deployment",
     description:
@@ -18,7 +34,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-surface">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary mb-12 text-center">Projects</h2>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -44,7 +60,7 @@ const ProjectsSection = () => {
               <Button asChild variant="outline" size="sm" className="w-fit border-primary text-primary hover:bg-secondary">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  View Live Site
+                  {project.link.includes("github") ? "View on GitHub" : "View Live Site"}
                 </a>
               </Button>
             </motion.div>

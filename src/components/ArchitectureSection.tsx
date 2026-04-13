@@ -1,20 +1,19 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Network, Upload, ImageIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import awsServerlessImg from "@/assets/aws-serverless-architecture.png";
+import gmailAiImg from "@/assets/gmail-ai-architecture.png";
+
+const diagrams = [
+  {
+    name: "AWS Serverless Task Management API",
+    image: awsServerlessImg,
+  },
+  {
+    name: "Gmail AI Assistant Agent",
+    image: gmailAiImg,
+  },
+];
 
 const ArchitectureSection = () => {
-  const [diagrams, setDiagrams] = useState<{ name: string; url: string }[]>([]);
-
-  const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files) return;
-    Array.from(files).forEach((file) => {
-      const url = URL.createObjectURL(file);
-      setDiagrams((prev) => [...prev, { name: file.name, url }]);
-    });
-  };
-
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -31,43 +30,22 @@ const ArchitectureSection = () => {
             AWS system architecture designs and cloud infrastructure diagrams
           </p>
 
-          {diagrams.length > 0 && (
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
-              {diagrams.map((d, i) => (
-                <div key={i} className="bg-card border border-border rounded-lg overflow-hidden">
-                  <img src={d.url} alt={d.name} className="w-full h-64 object-contain bg-surface p-4" />
-                  <div className="p-3 border-t border-border">
-                    <p className="text-sm font-medium text-foreground truncate">{d.name}</p>
-                  </div>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {diagrams.map((d, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+                className="bg-card border border-border rounded-lg overflow-hidden"
+              >
+                <img src={d.image} alt={d.name} className="w-full h-64 object-contain bg-surface p-4" />
+                <div className="p-3 border-t border-border">
+                  <p className="text-sm font-medium text-foreground">{d.name}</p>
                 </div>
-              ))}
-            </div>
-          )}
-
-          <div className="border-2 border-dashed border-border rounded-xl p-12 text-center bg-surface">
-            {diagrams.length === 0 && (
-              <div className="mb-6">
-                <Network className="w-12 h-12 text-muted-foreground mx-auto mb-3" />
-                <p className="text-muted-foreground">
-                  Upload your AWS architecture diagrams here
-                </p>
-              </div>
-            )}
-            <label>
-              <input
-                type="file"
-                accept="image/*"
-                multiple
-                onChange={handleUpload}
-                className="hidden"
-              />
-              <Button asChild variant="outline" className="border-primary text-primary hover:bg-secondary cursor-pointer">
-                <span>
-                  <Upload className="w-4 h-4 mr-2" />
-                  Upload Diagram
-                </span>
-              </Button>
-            </label>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
