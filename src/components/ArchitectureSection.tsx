@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import awsServerlessImg from "@/assets/aws-serverless-architecture.png";
 import gmailAiImg from "@/assets/gmail-ai-architecture.png";
+import threeTierImg from "@/assets/three-tier-aws-architecture.png";
 
 const diagrams = [
   {
@@ -10,6 +11,10 @@ const diagrams = [
   {
     name: "Gmail AI Assistant Agent",
     image: gmailAiImg,
+  },
+  {
+    name: "Three-Tier AWS Web Application",
+    image: threeTierImg,
   },
 ];
 
