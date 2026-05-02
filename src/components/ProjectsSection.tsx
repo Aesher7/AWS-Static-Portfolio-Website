@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, ExternalLink, Server, Mail } from "lucide-react";
+import { Globe, ExternalLink, Server, Mail, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -18,6 +18,14 @@ const projects = [
     tech: ["Python", "Gmail API", "OAuth 2.0", "Claude AI", "REST API"],
     icon: Mail,
     link: "https://github.com/Aesher7/Gmail-AI-Assistant-Agent",
+  },
+  {
+    title: "Three-Tier AWS Web Application",
+    description:
+      "Designed and deployed a production-grade three-tier web application on AWS from scratch, implementing enterprise cloud architecture patterns. Built a custom VPC with 8 subnets across two availability zones, enforcing network segmentation between public, application, and database tiers. Deployed Python Flask application servers behind Gunicorn, fronted by Nginx reverse proxies and two Application Load Balancers — one public-facing, one internal. Configured EC2 Auto Scaling Groups with target tracking policies (2-4 instances based on CPU). Provisioned an encrypted Amazon RDS PostgreSQL 16 database in isolated private subnets with automated backups.",
+    tech: ["VPC", "EC2", "RDS PostgreSQL", "ELB", "Auto Scaling", "NAT Gateway", "Security Groups", "Python", "Flask", "Nginx", "Gunicorn", "AWS CLI"],
+    icon: Network,
+    link: "https://github.com/Aesher7/three-tier-aws-app",
   },
   {
     title: "AWS Static Portfolio Website Deployment",
