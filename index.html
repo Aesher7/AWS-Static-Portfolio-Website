@@ -1,27 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aspiring Cloud Engineer Portfolio | AWS &amp; DevOps</title>
-    <meta name="description" content="Aspiring Cloud Engineer portfolio. Computer Science graduate specializing in AWS, Terraform, and DevOps. Building secure and scalable cloud solutions.">
-    <meta name="author" content="Cloud Engineer" />
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1d4c5ef-6b2a-4048-baaa-ba7f211d1da9/id-preview-8fd29eb6--5a0e4e01-6889-4376-9dee-8d7f8e25e23c.lovable.app-1773258887522.png">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1d4c5ef-6b2a-4048-baaa-ba7f211d1da9/id-preview-8fd29eb6--5a0e4e01-6889-4376-9dee-8d7f8e25e23c.lovable.app-1773258887522.png">
-    <meta property="og:title" content="Cloud Engineer Portfolio | AWS &amp; DevOps">
-  <meta name="twitter:title" content="Cloud Engineer Portfolio | AWS &amp; DevOps">
-  <meta property="og:description" content="Entry-level Cloud Engineer portfolio. Computer Science graduate specializing in AWS, Terraform, and DevOps. Building secure and scalable cloud solutions.">
-  <meta name="twitter:description" content="Entry-level Cloud Engineer portfolio. Computer Science graduate specializing in AWS, Terraform, and DevOps. Building secure and scalable cloud solutions.">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspiring Cloud Engineer Portfolio | AWS & DevOps</title>
+  <meta name="description" content="Aspiring Cloud Engineer portfolio. Computer Science graduate specializing in AWS, DevOps, and cloud architecture." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#hero" aria-label="Portfolio home">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18h9a4 4 0 0 0 .7-7.94A5.5 5.5 0 0 0 6.16 9.3 3.5 3.5 0 0 0 7 18Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Portfolio</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <main>
+    <section id="hero" class="hero section">
+      <div class="hero-orb hero-orb-top"></div>
+      <div class="hero-orb hero-orb-bottom"></div>
+      <div class="container hero-content">
+        <div class="availability-pill"><span class="status-dot"></span>Open to opportunities</div>
+        <h1>Aspiring Cloud Engineer</h1>
+        <p class="hero-subtitle">Computer Science Graduate · AI &amp; ML Master's Student</p>
+        <p class="hero-highlight">Building secure and scalable systems on AWS</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#certifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.25 8.5 17l.67-3.92L6.33 10.3l3.94-.57L12 6.15l1.73 3.58 3.94.57-2.84 2.78.67 3.92zM8 17.5V21l4-2 4 2v-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>View AWS Certification</span>
+          </a>
+          <a class="btn btn-outline" href="#contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Contact</span>
+          </a>
+        </div>
+        <a class="resume-link" href="Andre_Resume2026.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m8 10 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>Download Resume</span>
+        </a>
+        <a class="scroll-indicator" href="#about" aria-label="Scroll to About section">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section section-white">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>About Me</h2>
+        </div>
+        <div class="copy-stack">
+          <p>Computer Science student pursuing a B.S. and M.S. at Colorado State University – Global with concentrations in Artificial Intelligence and Machine Learning (GPA: 3.82). Currently transitioning into cloud engineering with hands-on experience in software development, front-end frameworks, and backend integration using Python, JavaScript, and TensorFlow.</p>
+          <p>AWS Certified Cloud Practitioner with a focus on designing secure, scalable, and cost-efficient cloud solutions. My key areas include:</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card"><h3>AWS Core Services</h3><p>EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, CloudWatch</p></article>
+          <article class="focus-card"><h3>Infrastructure</h3><p>CloudFront, Route 53, API Gateway, Load Balancing</p></article>
+          <article class="focus-card"><h3>DevOps</h3><p>CI/CD pipelines, root cause analysis, operational troubleshooting</p></article>
+          <article class="focus-card"><h3>Programming</h3><p>Python, JavaScript, SQL</p></article>
+        </div>
+        <p class="copy-tail">I bring problem solving, collaboration, and data driven optimization from both my software development and solar engineering experience. My goal is to apply these skills in cloud environments to modernize systems and deliver business value.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-tint">
+      <div class="container wide">
+        <div class="section-heading"><h2>Skills</h2></div>
+        <div class="skills-grid">
+          <article class="skill-card"><h3>Programming</h3><div class="tag-list"><span>Python</span><span>JavaScript</span><span>SQL</span></div></article>
+          <article class="skill-card"><h3>Cloud (AWS)</h3><div class="tag-list"><span>EC2</span><span>Lambda</span><span>S3</span><span>RDS</span><span>DynamoDB</span><span>VPC</span><span>Load Balancer</span><span>API Gateway</span><span>IAM</span><span>CloudWatch</span></div></article>
+          <article class="skill-card"><h3>Tools</h3><div class="tag-list"><span>Salesforce</span><span>Tableau</span><span>Git</span><span>Jira</span><span>VS Code</span></div></article>
+          <article class="skill-card"><h3>Technical Competencies</h3><div class="tag-list"><span>Root Cause Analysis</span><span>Incident Escalation Management</span><span>Telemetry &amp; Log Analysis</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-white">
+      <div class="container narrow">
+        <div class="section-heading"><h2>Education</h2></div>
+        <article class="feature-card education-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-4 9 4-9 4-9-4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 10.5V15c0 1.66 2.24 3 5 3s5-1.34 5-3v-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-card-body">
+            <div class="card-topline"><h3>Colorado State University – Global</h3><span>Expected May 2028</span></div>
+            <p class="accent-line">Denver, Colorado</p>
+            <p class="degree-line">B.S. &amp; M.S. in Computer Science</p>
+            <ul class="detail-list">
+              <li><strong>Concentrations:</strong> Artificial Intelligence and Machine Learning</li>
+              <li><strong>GPA:</strong> 3.82 / 4.00</li>
+              <li><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Objects &amp; Design, Computer Organization &amp; Programming, Combinatorics, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Statistics &amp; Applications</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section section-white">
+      <div class="container narrow">
+        <div class="section-heading"><h2>Certifications</h2></div>
+        <article class="feature-card centered-card">
+          <div class="large-icon-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.68L21 9.57l-4.5 4.38 1.06 6.2L12 17.27 6.44 20.15l1.06-6.2L3 9.57l6.2-.89Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AWS Certified Cloud Practitioner (CLF-C02)</h3>
+          <p class="mono-line">March 2026</p>
+          <ul class="detail-list compact left-align">
+            <li>Covers S3, EC2, Lambda, RDS, VPC, IAM, and CloudFront</li>
+            <li>Validates understanding of AWS core services, cloud architecture, pricing, and security</li>
+          </ul>
+          <a class="btn btn-primary" href="https://www.credly.com/badges/4fb36cc0-0fe2-47a3-aff1-de0e2e95b3e3/public_url" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14 19 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M19 14v5h-14V5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>View Certification</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-tint">
+      <div class="container wide">
+        <div class="section-heading"><h2>Projects</h2></div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>AWS Serverless Task Management API</h3>
+            <p>Built a full stack serverless task scheduler using React and TypeScript with an AWS backend powered by API Gateway, Lambda, and DynamoDB, implementing REST endpoints for full CRUD operations and scalable data storage. Diagnosed and resolved cross-service failures by fixing IAM permission issues, correcting a broken DynamoDB update pattern, and ensuring proper request payload handling.</p>
+            <div class="tag-list"><span>API Gateway</span><span>Lambda</span><span>DynamoDB</span><span>React</span><span>TypeScript</span><span>IAM</span><span>CloudWatch</span></div>
+            <a class="btn btn-outline small" href="https://github.com/Aesher7/serverless-crud-api-aws" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>Gmail AI Assistant Agent</h3>
+            <p>Built an autonomous AI agent in Python that integrates with Gmail via Google's REST API and OAuth 2.0 authentication, using Claude AI (Anthropic) to automatically summarize, categorize, and score urgency of incoming emails. Architected across four decoupled modules using the Perceive, Decide, Act loop with automated Gmail API replies and real-time desktop notifications.</p>
+            <div class="tag-list"><span>Python</span><span>Gmail API</span><span>OAuth 2.0</span><span>Claude AI</span><span>REST API</span></div>
+            <a class="btn btn-outline small" href="https://github.com/Aesher7/Gmail-AI-Assistant-Agent" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>Denver Broncos NFL IQ</h3>
+            <p>Built a Denver Broncos NFL IQ system using Python and pandas to process 17,000+ rows of NFL statistics into a structured knowledge base. Integrated AWS Bedrock (Claude 3 Haiku) via boto3 to ground AI responses in real Broncos data, eliminating hallucinations.</p>
+            <div class="tag-list"><span>Python (Programming Language)</span><span>AWS Bedrock</span><span>Claude 3 Haiku</span><span>Retrieval-Augmented Generation (RAG)</span><span>Pandas (Software)</span></div>
+            <a class="btn btn-outline small" href="https://github.com/Aesher7" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>Three-Tier AWS Web Application</h3>
+            <p>Designed and deployed a production-grade three-tier web application on AWS from scratch, implementing enterprise cloud architecture patterns used across the industry. Built a custom VPC with 8 subnets across two availability zones, enforcing network segmentation between public, application, and database tiers. Deployed Python Flask application servers behind Gunicorn, fronted by Nginx reverse proxies and two Application Load Balancers — one public-facing, one internal. Configured EC2 Auto Scaling Groups with target tracking policies between 2 and 4 instances based on CPU utilization. Provisioned an encrypted Amazon RDS PostgreSQL 16 database in isolated private subnets with automated backups enabled.</p>
+            <div class="tag-list"><span>AWS VPC</span><span>EC2</span><span>RDS PostgreSQL</span><span>Elastic Load Balancing</span><span>Auto Scaling</span><span>NAT Gateway</span><span>Security Groups</span><span>Python</span><span>Flask</span><span>Nginx</span><span>Gunicorn</span><span>AWS CLI</span></div>
+            <a class="btn btn-outline small" href="https://github.com/Aesher7/three-tier-aws-app" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>AWS Static Portfolio Website Deployment</h3>
+            <p>Designed and deployed a static portfolio website using S3 for storage and CloudFront for global content delivery. Configured Route 53 for custom domain routing and DNS management. Implemented HTTPS using AWS Certificate Manager and optimized delivery with CDN caching for low latency performance.</p>
+            <div class="tag-list"><span>S3</span><span>CloudFront</span><span>Route 53</span><span>ACM</span><span>CDN</span></div>
+            <a class="btn btn-outline small" href="https://esherportfolio.com/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section github-callout">
+      <div class="container">
+        <div class="github-panel">
+          <h2>Explore My Work on GitHub</h2>
+          <p>Browse my repositories, contributions, and open-source projects</p>
+          <a class="btn btn-light" href="https://github.com/Aesher7" target="_blank" rel="noopener noreferrer">github.com/Aesher7</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-tint">
+      <div class="container narrow">
+        <div class="section-heading"><h2>Professional Experience</h2></div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="card-topline"><h3>Senior Technical Support Specialist</h3><span>Sep 2020 – Present</span></div>
+              <p class="accent-line">Sunrun — Remote, Colorado</p>
+              <ul class="detail-list">
+                <li>Lead Tier 3 escalations for thousands of distributed PV and battery systems across San Diego and Orange County using Enphase Enlighten, SolarEdge Monitoring, Tesla Energy Gateway, and Salesforce.</li>
+                <li>Resolve 7 to 8 complex escalations daily involving inverter firmware faults, CT misconfigurations, gateway communication failures, grid synchronization errors, and battery dispatch anomalies through inverter-level log analysis and historical production trend review.</li>
+                <li>Perform system-level root cause analysis by interpreting single-line diagrams, validating wiring configurations, and analyzing real-time telemetry to determine remote reconfiguration, hardware replacement, or field dispatch.</li>
+                <li>Remediate 25 percent of escalated cases remotely through firmware updates, configuration corrections, and gateway resets, reducing dispatch frequency and operational costs.</li>
+                <li>Own high-frustration and repeat-call customer cases end to end, translating electrical and firmware issues into clear explanations while coordinating with Field Service, Engineering, and manufacturer support teams to drive resolution.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="card-topline"><h3>Software Development Engineering Intern</h3><span>May 2023 – Nov 2023</span></div>
+              <p class="accent-line">Qookit AI — Remote, Colorado</p>
+              <ul class="detail-list">
+                <li>Designed and developed modular, object-oriented software components using JavaScript and HTML, ensuring responsive and maintainable front-end interfaces compatible with mission-critical systems.</li>
+                <li>Built cross-platform mobile applications using Flutter and Dart, applying principles of declarative UI and widget-based architecture to deliver efficient, real-time user interactions across devices.</li>
+                <li>Integrated backend AI and data-processing systems with frontend interfaces using Python, optimizing performance and scalability to support complex operational requirements.</li>
+                <li>Applied knowledge of machine learning and large language models (LLMs) using Python and TensorFlow to engineer intelligent systems capable of delivering real-time, personalized recommendations based on diverse data sets.</li>
+                <li>Familiar with debugging, troubleshooting, and maintaining software systems on Linux-based environments; experienced with version control, IDEs (e.g., IntelliJ, VS Code), and collaborative development workflows.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container wide">
+        <div class="section-heading">
+          <h2>Architecture Diagrams</h2>
+          <p>AWS system architecture designs and cloud infrastructure diagrams</p>
+        </div>
+        <div class="architecture-grid five-up">
+          <article class="architecture-card"><img src="aws-serverless-architecture.png" alt="AWS Serverless Task Management API architecture diagram" loading="lazy" /><p>AWS Serverless Task Management API</p></article>
+          <article class="architecture-card"><img src="gmail-ai-architecture.png" alt="Gmail AI Assistant Agent architecture diagram" loading="lazy" /><p>Gmail AI Assistant Agent</p></article>
+          <article class="architecture-card"><img src="broncos-nfl-iq-architecture.png" alt="Denver Broncos NFL IQ architecture diagram" loading="lazy" /><p>Denver Broncos NFL IQ</p></article>
+          <article class="architecture-card"><img src="three-tier-aws-architecture.png" alt="Three-Tier AWS Web Application architecture diagram" loading="lazy" /><p>Three-Tier AWS Web Application</p></article>
+          <article class="architecture-card"><img src="static-website-architecture.png" alt="Static website architecture diagram" loading="lazy" /><p>Static Website Deployment</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-tint">
+      <div class="container contact-layout">
+        <div>
+          <div class="section-heading left-align"><h2>Get in Touch</h2></div>
+          <p class="contact-copy">I'm actively looking for cloud engineering opportunities. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/in/andre-e-3757a8223/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            <a class="contact-link" href="https://github.com/Aesher7" target="_blank" rel="noopener noreferrer">Follow on GitHub</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" placeholder="Your Name" required />
+          </label>
+          <label>
+            <span>Your Email</span>
+            <input type="email" name="email" placeholder="Your Email" required />
+          </label>
+          <label>
+            <span>Your Message</span>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </label>
+          <button class="btn btn-primary full-width" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <p>© <span id="year"></span> Cloud Engineer Portfolio</p>
+      <div class="footer-links">
+        <a href="https://github.com/Aesher7" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/andre-e-3757a8223/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
