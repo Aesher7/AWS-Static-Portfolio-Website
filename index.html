@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aspiring Cloud Engineer Portfolio | AWS & DevOps</title>
-  <meta name="description" content="Aspiring Cloud Engineer portfolio. Computer Science graduate specializing in AWS, DevOps, and cloud architecture." />
+  <title>Andre Esher | Aspiring Cloud Engineer</title>
+  <meta name="description" content="Andre Esher portfolio — aspiring cloud engineer building secure and scalable systems on AWS." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-shell">
       <a class="brand" href="#hero" aria-label="Portfolio home">
-        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 18h9a4 4 0 0 0 .7-7.94A5.5 5.5 0 0 0 6.16 9.3 3.5 3.5 0 0 0 7 18Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <span class="brand-badge">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 18h9a4 4 0 0 0 .7-7.94A5.5 5.5 0 0 0 6.16 9.3 3.5 3.5 0 0 0 7 18Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <span>Portfolio</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
@@ -22,10 +24,9 @@
       <nav id="site-nav" class="site-nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#architecture">Architecture</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -33,39 +34,35 @@
 
   <main>
     <section id="hero" class="hero section">
-      <div class="hero-orb hero-orb-top"></div>
-      <div class="hero-orb hero-orb-bottom"></div>
+      <div class="hero-glow hero-glow-right"></div>
+      <div class="hero-glow hero-glow-left"></div>
       <div class="container hero-content">
         <div class="availability-pill"><span class="status-dot"></span>Open to opportunities</div>
-        <h1>Aspiring Cloud Engineer</h1>
-        <p class="hero-subtitle">Computer Science Graduate · AI &amp; ML Master&#39;s Student</p>
-        <p class="hero-highlight">Building secure and scalable systems on AWS</p>
+        <h1 class="hero-title hero-title-mobile">Aspiring Cloud Engineer</h1>
+        <h1 class="hero-title hero-title-desktop">Andre Esher</h1>
+        <p class="hero-subtitle hero-subtitle-mobile">Computer Science Graduate · AI &amp; ML Master's Student</p>
+        <p class="hero-subtitle hero-subtitle-desktop">Aspiring Cloud Engineer</p>
+        <p class="hero-highlight hero-highlight-mobile">Building secure and scalable systems on AWS</p>
+        <p class="hero-copy hero-copy-desktop">Computer Science graduate building secure, scalable cloud solutions on AWS.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-outline" href="#certifications">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.25 8.5 17l.67-3.92L6.33 10.3l3.94-.57L12 6.15l1.73 3.58 3.94.57-2.84 2.78.67 3.92zM8 17.5V21l4-2 4 2v-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>View AWS Certification</span>
-          </a>
-          <a class="btn btn-outline" href="#contact">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Contact</span>
-          </a>
+          <a class="btn btn-outline btn-dark" href="#contact">Get in Touch</a>
+          <a class="btn btn-outline btn-cloud" href="Andre_Resume2026.pdf" download>Download Resume</a>
         </div>
         <a class="resume-link" href="Andre_Resume2026.pdf" download>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m8 10 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           <span>Download Resume</span>
+          <svg class="resume-link-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <a class="scroll-indicator" href="#about" aria-label="Scroll to About section">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m6 13 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </section>
 
     <section id="about" class="section section-white">
       <div class="container narrow">
-        <div class="section-heading">
-          <h2>About Me</h2>
-        </div>
+        <div class="section-heading"><h2>About Me</h2></div>
         <div class="copy-stack">
           <p>Computer Science student pursuing a B.S. and M.S. at Colorado State University – Global with concentrations in Artificial Intelligence and Machine Learning (GPA: 3.82). Currently transitioning into cloud engineering with hands-on experience in software development, front-end frameworks, and backend integration using Python, JavaScript, and TensorFlow.</p>
           <p>AWS Certified Cloud Practitioner with a focus on designing secure, scalable, and cost-efficient cloud solutions. My key areas include:</p>
@@ -126,10 +123,7 @@
             <li>Covers S3, EC2, Lambda, RDS, VPC, IAM, and CloudFront</li>
             <li>Validates understanding of AWS core services, cloud architecture, pricing, and security</li>
           </ul>
-          <a class="btn btn-primary" href="https://www.credly.com/badges/4fb36cc0-0fe2-47a3-aff1-de0e2e95b3e3/public_url" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14 19 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M19 14v5h-14V5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>View Certification</span>
-          </a>
+          <a class="btn btn-primary" href="https://www.credly.com/badges/4fb36cc0-0fe2-47a3-aff1-de0e2e95b3e3/public_url" target="_blank" rel="noopener noreferrer">View Certification</a>
         </article>
       </div>
     </section>
@@ -218,7 +212,7 @@
       </div>
     </section>
 
-    <section class="section section-white">
+    <section id="architecture" class="section section-white">
       <div class="container wide">
         <div class="section-heading">
           <h2>Architecture Diagrams</h2>
